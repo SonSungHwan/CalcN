@@ -46,4 +46,12 @@ public class SimpleCalculatorTest {
 		assertEquals(300, calc.getResult());
 	}
 
+	@Test
+	public void testDec() {
+		SimpleCalculator calc = new SimpleCalculator();
+		calc.inc(100);
+		assertEquals(100, calc.getResult());
+		calc.dec(50);
+		assertEquals(50, calc.getResult());
+	}
 }
